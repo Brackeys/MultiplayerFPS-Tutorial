@@ -64,6 +64,7 @@ GameObject:
   - 114: {fileID: 11487676}
   - 114: {fileID: 11498236}
   - 114: {fileID: 11475014}
+  - 153: {fileID: 15326154}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -412,7 +413,7 @@ Rigidbody:
   m_GameObject: {fileID: 141556}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 5
   m_AngularDrag: .0500000007
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -510,7 +511,7 @@ MonoBehaviour:
   m_SendInterval: .100000001
   m_SyncRotationAxis: 1
   m_RotationSyncCompression: 0
-  m_MovementThreshold: 1e+10
+  m_MovementThreshold: .00100000005
   m_InterpolateRotation: .300000012
   m_InterpolateMovement: 0
 --- !u!114 &11481358
@@ -601,6 +602,104 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: .5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!153 &15326154
+ConfigurableJoint:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141556}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_SecondaryAxis: {x: 0, y: 0, z: 0}
+  m_XMotion: 2
+  m_YMotion: 2
+  m_ZMotion: 2
+  m_AngularXMotion: 2
+  m_AngularYMotion: 2
+  m_AngularZMotion: 2
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 2
+    mode: 0
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.40282326e+38
+  m_YDrive:
+    serializedVersion: 2
+    mode: 1
+    positionSpring: 40
+    positionDamper: 0
+    maximumForce: 35
+  m_ZDrive:
+    serializedVersion: 2
+    mode: 0
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.40282326e+38
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 2
+    mode: 0
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.40282326e+38
+  m_AngularYZDrive:
+    serializedVersion: 2
+    mode: 0
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.40282326e+38
+  m_SlerpDrive:
+    serializedVersion: 2
+    mode: 0
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.40282326e+38
+  m_ProjectionMode: 0
+  m_ProjectionDistance: .100000001
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -714,7 +813,7 @@ Prefab:
       objectReference: {fileID: 430406}
     - target: {fileID: 0}
       propertyPath: m_Drag
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
@@ -722,12 +821,56 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_MovementThreshold
-      value: 1e+10
+      value: .00100000005
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_InterpolateMovement
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Axis.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SecondaryAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_XDrive.maximumForce
+      value: 3.40282326e+38
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_YDrive.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_YDrive.positionSpring
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_YDrive.maximumForce
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_ZDrive.maximumForce
+      value: 3.40282326e+38
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularXDrive.maximumForce
+      value: 3.40282326e+38
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularYZDrive.maximumForce
+      value: 3.40282326e+38
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SlerpDrive.maximumForce
+      value: 3.40282326e+38
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_VisualizerPrefab
+      value: 
+      objectReference: {fileID: 191236, guid: 76cc9852c8d8c354fb09314e8d028ca4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141556}
