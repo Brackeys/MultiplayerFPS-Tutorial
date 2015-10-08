@@ -5,6 +5,7 @@
 [Tt]emp/
 [Oo]bj/
 3rdParty/
+Builds/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
