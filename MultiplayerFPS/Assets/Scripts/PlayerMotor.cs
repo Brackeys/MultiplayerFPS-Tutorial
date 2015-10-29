@@ -7,6 +7,9 @@ public class PlayerMotor : MonoBehaviour {
 	private Camera cam;
 
 	private Vector3 velocity = Vector3.zero;
+	public Vector3 getVelocity {
+		get { return velocity; }
+	}
 	private Vector3 rotation = Vector3.zero;
 	private float cameraRotationX = 0f;
 	private float currentCameraRotationX = 0f;

@@ -1,0 +1,11 @@
+{
+	"version":"0.1.0",
+	"configurations":[ 
+		{
+			"name":"Unity",
+			"type":"mono",
+			"address":"localhost",
+			"port":56703
+		}
+	]
+}
