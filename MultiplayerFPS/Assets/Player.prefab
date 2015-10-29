@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 443514}
   - 108: {fileID: 10803850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 416762}
   - 33: {fileID: 3323268}
   - 23: {fileID: 2373856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightStrip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,9 +50,11 @@ GameObject:
   - 114: {fileID: 11478292}
   - 114: {fileID: 11468604}
   - 153: {fileID: 15319452}
-  m_Layer: 0
+  - 114: {fileID: 11488638}
+  - 114: {fileID: 11435996}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +71,7 @@ GameObject:
   - 124: {fileID: 12455104}
   - 92: {fileID: 9242478}
   - 81: {fileID: 8100924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +88,7 @@ GameObject:
   - 4: {fileID: 413554}
   - 33: {fileID: 3301926}
   - 23: {fileID: 2320946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +105,7 @@ GameObject:
   - 4: {fileID: 485790}
   - 199: {fileID: 19968676}
   - 198: {fileID: 19835212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Afterburner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +122,7 @@ GameObject:
   - 4: {fileID: 437716}
   - 199: {fileID: 19913854}
   - 198: {fileID: 19809258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Afterburner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +140,7 @@ GameObject:
   - 33: {fileID: 3319912}
   - 65: {fileID: 6534290}
   - 23: {fileID: 2396186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +155,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +173,7 @@ GameObject:
   - 33: {fileID: 3350988}
   - 65: {fileID: 6574438}
   - 23: {fileID: 2380656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +190,7 @@ GameObject:
   - 4: {fileID: 475806}
   - 199: {fileID: 19986354}
   - 198: {fileID: 19813780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +205,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +222,7 @@ GameObject:
   - 4: {fileID: 415822}
   - 33: {fileID: 3344914}
   - 23: {fileID: 2379152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +238,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 496226}
   - 108: {fileID: 10807706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +256,7 @@ GameObject:
   - 33: {fileID: 3342022}
   - 65: {fileID: 6522974}
   - 23: {fileID: 2396372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +273,7 @@ GameObject:
   - 4: {fileID: 419558}
   - 199: {fileID: 19962206}
   - 198: {fileID: 19848754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +289,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 446872}
   - 114: {fileID: 11429882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +304,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +321,7 @@ GameObject:
   - 4: {fileID: 473740}
   - 33: {fileID: 3331252}
   - 23: {fileID: 2382438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ThrusterModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,6 +1029,18 @@ MonoBehaviour:
   jointMode: 1
   jointSpring: 20
   jointMaxForce: 40
+--- !u!114 &11435996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08f934f3e6d818439609bb28f5e9f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &11468604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1082,6 +1096,26 @@ MonoBehaviour:
   - {fileID: 11433214}
   - {fileID: 2047062}
   - {fileID: 8100924}
+  remoteLayerName: RemotePlayer
+--- !u!114 &11488638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8098be517709cc4a8f05afae702a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Glock G43
+    damage: 10
+    range: 200
+  cam: {fileID: 2047062}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967039
 --- !u!124 &12455104
 Behaviour:
   m_ObjectHideFlags: 1
@@ -5587,6 +5621,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: thrusterForce
       value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mask.m_Bits
+      value: 4294967039
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2047062}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

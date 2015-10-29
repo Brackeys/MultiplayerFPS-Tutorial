@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class RotateByVelocity : MonoBehaviour {
 	
@@ -11,18 +11,21 @@ public class RotateByVelocity : MonoBehaviour {
 	float amount = 0.7f;
 	
 	void Update () {
-		Vector3 _point = transform.forward * Input.GetAxis ("Vertical") * amount;
-		_point.y = Mathf.Lerp (-1f, 0f, Mathf.Abs (Input.GetAxis ("Vertical") * amount));
-		
-		/*
-		if (_point == Vector3.zero)
-			_point = Vector3.up;
-		*/
-		
-		//Debug.Log (_point);
+		float _input = Input.GetAxis("Vertical");
+
+		Vector3 _point;
+        if (Mathf.Abs (_input) > 0.01f)
+		{
+			_point = transform.forward * _input * amount;
+			_point.y = Mathf.Lerp(-1f, 0f, Mathf.Abs(_input * amount));	
+		} else
+		{
+			_point = -transform.up + transform.forward * 0.01f;
+		}
+
 		point = _point + target.position;
-		
-		target.rotation = Quaternion.LookRotation (-_point);
+
+		target.rotation = Quaternion.LookRotation(-_point);
 	}
 	
 	void OnDrawGizmosSelected () {
