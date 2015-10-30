@@ -17,9 +17,10 @@ GameObject:
   - 114: {fileID: 11478292}
   - 114: {fileID: 11468604}
   - 153: {fileID: 15319452}
-  m_Layer: 0
+  - 114: {fileID: 11433114}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +37,7 @@ GameObject:
   - 124: {fileID: 12455104}
   - 92: {fileID: 9242478}
   - 81: {fileID: 8100924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +55,7 @@ GameObject:
   - 33: {fileID: 3319912}
   - 65: {fileID: 6534290}
   - 23: {fileID: 2396186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +73,7 @@ GameObject:
   - 33: {fileID: 3350988}
   - 65: {fileID: 6574438}
   - 23: {fileID: 2380656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +88,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +106,7 @@ GameObject:
   - 33: {fileID: 3342022}
   - 65: {fileID: 6522974}
   - 23: {fileID: 2396372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +123,7 @@ GameObject:
   - 4: {fileID: 417058}
   - 33: {fileID: 3381644}
   - 23: {fileID: 2398890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +138,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,6 +515,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2047062}
+  cameraRotationLimit: 85
+--- !u!114 &11433114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8098be517709cc4a8f05afae702a79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Glock
+    damage: 10
+    range: 100
+  cam: {fileID: 2047062}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &11433214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -586,6 +607,8 @@ MonoBehaviour:
   - {fileID: 11433214}
   - {fileID: 2047062}
   - {fileID: 8100924}
+  - {fileID: 11433114}
+  remoteLayerName: RemotePlayer
 --- !u!124 &12455104
 Behaviour:
   m_ObjectHideFlags: 1
@@ -712,7 +735,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: componentsToDisable.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_AssetId.i0
@@ -826,6 +849,26 @@ Prefab:
       propertyPath: thrusterForce
       value: 1300
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2047062}
+    - target: {fileID: 0}
+      propertyPath: mask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: componentsToDisable.Array.data[4]
+      value: 
+      objectReference: {fileID: 11433114}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120524}
