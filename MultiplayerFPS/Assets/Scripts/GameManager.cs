@@ -3,7 +3,24 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
-    private const string PLAYER_ID_PREFIX = "Player ";
+	public static GameManager instance;
+
+	public MatchSettings matchSettings;
+
+	void Awake ()
+	{
+		if (instance != null)
+		{
+			Debug.LogError("More than one GameManager in scene.");
+		} else
+		{
+			instance = this;
+		}
+	}
+
+	#region Player tracking
+
+	private const string PLAYER_ID_PREFIX = "Player ";
 
     private static Dictionary<string, Player> players = new Dictionary<string, Player>();
 
@@ -24,18 +41,20 @@ public class GameManager : MonoBehaviour {
         return players[_playerID];
     }
 
-    //void OnGUI ()
-    //{
-    //    GUILayout.BeginArea(new Rect(200, 200, 200, 500));
-    //    GUILayout.BeginVertical();
+	//void OnGUI ()
+	//{
+	//    GUILayout.BeginArea(new Rect(200, 200, 200, 500));
+	//    GUILayout.BeginVertical();
 
-    //    foreach (string _playerID in players.Keys)
-    //    {
-    //        GUILayout.Label(_playerID + "  -  " + players[_playerID].transform.name);
-    //    }
+	//    foreach (string _playerID in players.Keys)
+	//    {
+	//        GUILayout.Label(_playerID + "  -  " + players[_playerID].transform.name);
+	//    }
 
-    //    GUILayout.EndVertical();
-    //    GUILayout.EndArea();
-    //}
+	//    GUILayout.EndVertical();
+	//    GUILayout.EndArea();
+	//}
+
+	#endregion
 
 }

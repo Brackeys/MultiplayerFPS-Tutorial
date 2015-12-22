@@ -165,8 +165,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .275999993, y: -.130999997, z: .768000007}
-  m_LocalScale: {x: .669420838, y: .669420838, z: .669420838}
+  m_LocalPosition: {x: 0.276, y: -0.131, z: 0.768}
+  m_LocalScale: {x: 0.66942084, y: 0.66942084, z: 0.66942084}
   m_Children:
   - {fileID: 463896}
   - {fileID: 488664}
@@ -195,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 149156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .15046756, y: .168524608, z: .564484537}
+  m_LocalScale: {x: 0.15046756, y: 0.16852461, z: 0.56448454}
   m_Children: []
   m_Father: {fileID: 443646}
   m_RootOrder: 0
@@ -219,8 +219,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.163000003, z: -.150999993}
-  m_LocalScale: {x: .0945697129, y: .196854904, z: .0914644226}
+  m_LocalPosition: {x: 0, y: -0.163, z: -0.151}
+  m_LocalScale: {x: 0.09456971, y: 0.1968549, z: 0.09146442}
   m_Children: []
   m_Father: {fileID: 443646}
   m_RootOrder: 2
@@ -243,9 +243,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151522}
-  m_LocalRotation: {x: .115669742, y: 0, z: 0, w: .993287802}
-  m_LocalPosition: {x: 0, y: -.137999997, z: .141000003}
-  m_LocalScale: {x: .15046756, y: .168524608, z: .0914644226}
+  m_LocalRotation: {x: 0.11566974, y: 0, z: 0, w: 0.9932878}
+  m_LocalPosition: {x: 0, y: -0.138, z: 0.141}
+  m_LocalScale: {x: 0.15046756, y: 0.16852461, z: 0.09146442}
   m_Children: []
   m_Father: {fileID: 443646}
   m_RootOrder: 1
@@ -258,14 +258,14 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: .300000012
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -281,7 +281,7 @@ Camera:
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
-  m_StereoSeparation: .0219999999
+  m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
 --- !u!23 &2380656
 MeshRenderer:
@@ -304,7 +304,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -330,7 +330,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -356,7 +356,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -382,7 +382,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -424,7 +424,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 4
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -491,6 +491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba6b6c515fdc6c49b8d58ab912e83b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  disableOnDeath:
+  - {fileID: 11433214}
+  - {fileID: 11433114}
 --- !u!114 &11420026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -549,12 +553,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon:
     name: Glock
-    damage: 10
+    damage: 40
     range: 100
   cam: {fileID: 2047062}
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967039
 --- !u!114 &11433214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -585,11 +589,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Target: {fileID: 465354}
   m_ChildIndex: 0
-  m_SendInterval: .100000001
+  m_SendInterval: 0.1
   m_SyncRotationAxis: 1
   m_RotationSyncCompression: 0
-  m_MovementThreshold: .00100000005
-  m_InterpolateRotation: .300000012
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.3
   m_InterpolateMovement: 0
 --- !u!114 &11478292
 MonoBehaviour:
@@ -603,11 +607,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: .100000001
+  m_SendInterval: 0.1
   m_SyncRotationAxis: 2
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
-  m_MovementTheshold: .00100000005
+  m_MovementTheshold: 0.001
   m_SnapThreshold: 5
   m_InterpolateRotation: 10
   m_InterpolateMovement: 1
@@ -646,7 +650,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!153 &15319452
 ConfigurableJoint:
@@ -699,46 +703,40 @@ ConfigurableJoint:
   m_TargetPosition: {x: 0, y: 0, z: 0}
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
-    serializedVersion: 2
-    mode: 0
+    serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
-    maximumForce: 3.40282326e+38
+    maximumForce: 3.4028233e+38
   m_YDrive:
-    serializedVersion: 2
-    mode: 1
+    serializedVersion: 3
     positionSpring: 20
     positionDamper: 0
     maximumForce: 40
   m_ZDrive:
-    serializedVersion: 2
-    mode: 0
+    serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
-    maximumForce: 3.40282326e+38
+    maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
   m_RotationDriveMode: 0
   m_AngularXDrive:
-    serializedVersion: 2
-    mode: 0
+    serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
-    maximumForce: 3.40282326e+38
+    maximumForce: 3.4028233e+38
   m_AngularYZDrive:
-    serializedVersion: 2
-    mode: 0
+    serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
-    maximumForce: 3.40282326e+38
+    maximumForce: 3.4028233e+38
   m_SlerpDrive:
-    serializedVersion: 2
-    mode: 0
+    serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
-    maximumForce: 3.40282326e+38
+    maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
-  m_ProjectionDistance: .100000001
+  m_ProjectionDistance: 0.1
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
@@ -753,6 +751,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: disableOnDeath.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: componentsToDisable.Array.size
       value: 5
@@ -875,7 +877,7 @@ Prefab:
       objectReference: {fileID: 2047062}
     - target: {fileID: 0}
       propertyPath: mask.m_Bits
-      value: 4294967295
+      value: 4294967039
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
@@ -889,6 +891,18 @@ Prefab:
       propertyPath: componentsToDisable.Array.data[4]
       value: 
       objectReference: {fileID: 11433114}
+    - target: {fileID: 0}
+      propertyPath: disableOnDeath.Array.data[0]
+      value: 
+      objectReference: {fileID: 11433214}
+    - target: {fileID: 0}
+      propertyPath: disableOnDeath.Array.data[1]
+      value: 
+      objectReference: {fileID: 11433114}
+    - target: {fileID: 0}
+      propertyPath: weapon.damage
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120524}
