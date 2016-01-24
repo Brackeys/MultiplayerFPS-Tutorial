@@ -50,7 +50,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &116572
 GameObject:
   m_ObjectHideFlags: 1
@@ -513,7 +513,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294966271
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -990,6 +990,9 @@ MonoBehaviour:
   - {fileID: 11433114}
   - {fileID: 9504178}
   remoteLayerName: RemotePlayer
+  dontDrawLayerName: DontDraw
+  playerGraphics: {fileID: 168006}
+  playerUIPrefab: {fileID: 167956, guid: b135717c33bc8f64e8f5fc0953c22a7c, type: 2}
 --- !u!114 &11499124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7353,6 +7356,22 @@ Prefab:
       propertyPath: componentsToDisable.Array.data[5]
       value: 
       objectReference: {fileID: 9504178}
+    - target: {fileID: 0}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294966271
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playerGraphics
+      value: 
+      objectReference: {fileID: 168006}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playerUIPrefab
+      value: 
+      objectReference: {fileID: 167956, guid: b135717c33bc8f64e8f5fc0953c22a7c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120524}
