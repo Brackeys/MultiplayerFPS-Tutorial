@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &102616
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 453622}
-  - 33: {fileID: 3309340}
-  - 23: {fileID: 2331160}
-  m_Layer: 0
-  m_Name: Sci-Fi Automatic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &105414
 GameObject:
   m_ObjectHideFlags: 1
@@ -121,6 +104,7 @@ GameObject:
   - 114: {fileID: 11415700}
   - 95: {fileID: 9504178}
   - 114: {fileID: 11499124}
+  - 114: {fileID: 11450446}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -293,7 +277,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 465354}
@@ -325,18 +309,6 @@ Transform:
   - {fileID: 464026}
   - {fileID: 458058}
   m_Father: {fileID: 483234}
-  m_RootOrder: 0
---- !u!4 &453622
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.021, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 470462}
   m_RootOrder: 0
 --- !u!4 &453742
 Transform:
@@ -436,10 +408,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124644}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0.205, y: -0.19, z: 0.858}
+  m_LocalPosition: {x: 0.205, y: -0.19, z: 0.799}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 453622}
+  m_Children: []
   m_Father: {fileID: 465354}
   m_RootOrder: 0
 --- !u!4 &483234
@@ -549,34 +520,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &2331160
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102616}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 25346c17980eb5a4e8dde09d8136bbf8, type: 2}
-  - {fileID: 2100000, guid: 637ee85c8e0f76848bb1009c4c713eba, type: 2}
-  - {fileID: 2100000, guid: 570d38e41cf124549b1076916c6d4c75, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
 --- !u!23 &2339574
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -655,13 +598,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3309340
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102616}
-  m_Mesh: {fileID: 4300000, guid: acebf912e570b29438656235c03e23b6, type: 3}
 --- !u!33 &3363816
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -807,12 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8098be517709cc4a8f05afae702a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon:
-    name: Sci-Fi Automatic
-    damage: 40
-    range: 100
-  weaponGFX: {fileID: 102616}
-  weaponLayerName: Weapon
   cam: {fileID: 2047062}
   mask:
     serializedVersion: 2
@@ -833,6 +763,25 @@ MonoBehaviour:
   thrusterForce: 1300
   jointSpring: 20
   jointMaxForce: 40
+--- !u!114 &11450446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee915d0fef4dcd44386b079f7af4900f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponLayerName: Weapon
+  weaponHolder: {fileID: 470462}
+  primaryWeapon:
+    name: Blaster
+    damage: 5
+    range: 100
+    fireRate: 10
+    graphics: {fileID: 199728, guid: ed705c92b28f65f4f99f5b76f9f51ecc, type: 2}
 --- !u!114 &11468604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7277,6 +7226,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: weapon.name
       value: Sci-Fi Automatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: primaryWeapon.fireRate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
