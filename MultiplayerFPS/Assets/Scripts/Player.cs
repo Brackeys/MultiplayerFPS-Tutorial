@@ -32,27 +32,53 @@ public class Player : NetworkBehaviour {
 	[SerializeField]
 	private GameObject spawnEffect;
 
-	public void Setup ()
+	private bool firstSetup = true;
+
+	public void SetupPlayer ()
     {
-		wasEnabled = new bool[disableOnDeath.Length];
-		for (int i = 0; i < wasEnabled.Length; i++)
+		if (isLocalPlayer)
 		{
-			wasEnabled[i] = disableOnDeath[i].enabled;
+			//Switch cameras
+			GameManager.instance.SetSceneCameraActive(false);
+			GetComponent<PlayerSetup>().playerUIInstance.SetActive(true);
 		}
 
-        SetDefaults();
+		CmdBroadCastNewPlayerSetup();
     }
 
-	void Update()
+	[Command]
+	private void CmdBroadCastNewPlayerSetup ()
 	{
-		if (!isLocalPlayer)
-			return;
+		RpcSetupPlayerOnAllClients();
+    }
 
-		if (Input.GetKeyDown(KeyCode.K))
+	[ClientRpc]
+	private void RpcSetupPlayerOnAllClients ()
+	{
+		if (firstSetup)
 		{
-			RpcTakeDamage(99999);
+			wasEnabled = new bool[disableOnDeath.Length];
+			for (int i = 0; i < wasEnabled.Length; i++)
+			{
+				wasEnabled[i] = disableOnDeath[i].enabled;
+			}
+
+			firstSetup = false;
 		}
+
+		SetDefaults();
 	}
+
+	//void Update()
+	//{
+	//	if (!isLocalPlayer)
+	//		return;
+
+	//	if (Input.GetKeyDown(KeyCode.K))
+	//	{
+	//		RpcTakeDamage(99999);
+	//	}
+	//}
 
 	[ClientRpc]
     public void RpcTakeDamage (int _amount)
@@ -115,7 +141,9 @@ public class Player : NetworkBehaviour {
 		transform.position = _spawnPoint.position;
 		transform.rotation = _spawnPoint.rotation;
 
-		SetDefaults();
+		yield return new WaitForSeconds(0.1f);
+
+		SetupPlayer();
 
 		Debug.Log(transform.name + " respawned.");
 	}
@@ -142,13 +170,6 @@ public class Player : NetworkBehaviour {
 		Collider _col = GetComponent<Collider>();
 		if (_col != null)
 			_col.enabled = true;
-
-		//Switch cameras
-		if (isLocalPlayer)
-		{
-			GameManager.instance.SetSceneCameraActive(false);
-			GetComponent<PlayerSetup>().playerUIInstance.SetActive(true);
-		}
 
 		//Create spawn effect
 		GameObject _gfxIns = (GameObject)Instantiate(spawnEffect, transform.position, Quaternion.identity);
