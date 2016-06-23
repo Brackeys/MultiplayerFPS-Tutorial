@@ -47,7 +47,7 @@ PlayerSettings:
   usePlayerLog: 1
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
-  resizableWindow: 0
+  resizableWindow: 1
   useMacAppStoreValidation: 0
   gpuSkinning: 0
   xboxPIXTextureCapture: 0
@@ -117,6 +117,8 @@ PlayerSettings:
     m_Bits: 238
   iPhoneSdkVersion: 988
   iPhoneTargetOSVersion: 22
+  tvOSSdkVersion: 0
+  tvOSTargetOSVersion: 900
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -196,6 +198,7 @@ PlayerSettings:
   wiiUSystemHeapSize: 128
   wiiUTVStartupScreen: {fileID: 0}
   wiiUGamePadStartupScreen: {fileID: 0}
+  wiiUDrcBufferDisabled: 0
   wiiUProfilerLibPath: 
   actionOnDotNetUnhandledException: 1
   enableInternalProfiler: 0
@@ -263,6 +266,7 @@ PlayerSettings:
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
   ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
+  ps4UseDebugIl2cppLibs: 0
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -328,6 +332,7 @@ PlayerSettings:
   psp2UseLibLocation: 0
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
+  psp2UseDebugIl2cppLibs: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols:
@@ -425,6 +430,7 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
   - Android::ScriptingBackend
+  - CloudNetworkingId::CloudNetworkingId
   - Metro::ScriptingBackend
   - Standalone::ScriptingBackend
   - WP8::ScriptingBackend
@@ -437,6 +443,7 @@ PlayerSettings:
   - iOS::EnableIncrementalBuildSupportForIl2cpp
   - iOS::ScriptingBackend
   Android::ScriptingBackend: 0
+  CloudNetworkingId::CloudNetworkingId: 1163952
   Metro::ScriptingBackend: 2
   Standalone::ScriptingBackend: 0
   WP8::ScriptingBackend: 2
@@ -458,13 +465,17 @@ PlayerSettings:
   WebGL::useEmbeddedResources: 0
   XboxOne::enus: 1
   stringPropertyNames:
+  - Build_ServiceEnabled::Build_ServiceEnabled
+  - UNet_ServiceEnabled::UNet_ServiceEnabled
   - WebGL::emscriptenArgs
   - WebGL::template
   - additionalIl2CppArgs::additionalIl2CppArgs
+  Build_ServiceEnabled::Build_ServiceEnabled: False
+  UNet_ServiceEnabled::UNet_ServiceEnabled: True
   WebGL::emscriptenArgs: 
   WebGL::template: APPLICATION:Default
   additionalIl2CppArgs::additionalIl2CppArgs: 
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: f8626bf2-30c0-4812-844e-c8a381ca942c
+  projectName: MultiplayerFPS
+  organizationId: brackeys
   cloudEnabled: 0
