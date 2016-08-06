@@ -33,21 +33,21 @@ public class JoinGame : MonoBehaviour {
 	public void RefreshRoomList ()
 	{
 		ClearRoomList();
-		networkManager.matchMaker.ListMatches(0, 20, "", OnMatchList);
+		networkManager.matchMaker.ListMatches(0, 20, "", true, 0, 0, OnMatchList);
 		status.text = "Loading...";
 	}
 
-	public void OnMatchList (ListMatchResponse matchList)
+	public void OnMatchList (bool success, string extendedInfo, List<MatchInfoSnapshot> matchList)
 	{
 		status.text = "";
 
-		if (matchList == null)
+		if (!success || matchList == null)
 		{
 			status.text = "Couldn't get room list.";
 			return;
 		}
 
-		foreach (MatchDesc match in matchList.matches)
+		foreach (MatchInfoSnapshot match in matchList)
 		{
 			GameObject _roomListItemGO = Instantiate(roomListItemPrefab);
 			_roomListItemGO.transform.SetParent(roomListParent);
@@ -80,9 +80,9 @@ public class JoinGame : MonoBehaviour {
 		roomList.Clear();
 	}
 
-	public void JoinRoom (MatchDesc _match)
+	public void JoinRoom (MatchInfoSnapshot _match)
 	{
-		networkManager.matchMaker.JoinMatch(_match.networkId, "", networkManager.OnMatchJoined);
+		networkManager.matchMaker.JoinMatch(_match.networkId, "", "", "", 0, 0, networkManager.OnMatchJoined);
 		ClearRoomList();
 		status.text = "JOINING...";
 	}
