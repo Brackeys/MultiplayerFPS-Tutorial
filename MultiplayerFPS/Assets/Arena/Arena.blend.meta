@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: fe19b36ccdbdb3546a6ed028a4e30687
+timeCreated: 1471356426
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arena
+    100004: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_000
+    100006: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_001
+    100008: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_floor_s
+    100010: Arena_Base_arena_entrance_entrance_door
+    100012: Arena_Base_chairs_all
+    100014: Arena_Base_Entrance_Sides
+    100016: Arena_Base_Entrance_Sides_001
+    100018: Arena_Base_Entrance_Sides_002
+    100020: Arena_Base_Entrance_Sides_003
+    100022: Arena_Base_fence_transform39_33
+    100024: Arena_Base_polySurface18_walls_Arena_Base
+    100026: Arena_Base_polySurface18_walls_Arena_Base_001
+    100028: Arena_Base_pTorus1_fence
+    100030: Arena_Base_pTorus1_fence_001
+    100032: Arena_Base_ramp
+    100034: Cube
+    100036: Cube_001
+    100038: Cube_002
+    100040: Cube_003
+    100042: Cube_004
+    100044: default_1_1
+    100046: default_1_1_001
+    100048: Entrance_Floor_Arena_Base
+    400000: //RootNode
+    400002: Arena
+    400004: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_000
+    400006: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_001
+    400008: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_floor_s
+    400010: Arena_Base_arena_entrance_entrance_door
+    400012: Arena_Base_chairs_all
+    400014: Arena_Base_Entrance_Sides
+    400016: Arena_Base_Entrance_Sides_001
+    400018: Arena_Base_Entrance_Sides_002
+    400020: Arena_Base_Entrance_Sides_003
+    400022: Arena_Base_fence_transform39_33
+    400024: Arena_Base_polySurface18_walls_Arena_Base
+    400026: Arena_Base_polySurface18_walls_Arena_Base_001
+    400028: Arena_Base_pTorus1_fence
+    400030: Arena_Base_pTorus1_fence_001
+    400032: Arena_Base_ramp
+    400034: Cube
+    400036: Cube_001
+    400038: Cube_002
+    400040: Cube_003
+    400042: Cube_004
+    400044: default_1_1
+    400046: default_1_1_001
+    400048: Entrance_Floor_Arena_Base
+    2300000: Arena
+    2300002: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_000
+    2300004: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_001
+    2300006: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_floor_s
+    2300008: Arena_Base_arena_entrance_entrance_door
+    2300010: Arena_Base_chairs_all
+    2300012: Arena_Base_Entrance_Sides
+    2300014: Arena_Base_Entrance_Sides_001
+    2300016: Arena_Base_Entrance_Sides_002
+    2300018: Arena_Base_Entrance_Sides_003
+    2300020: Arena_Base_fence_transform39_33
+    2300022: Arena_Base_polySurface18_walls_Arena_Base
+    2300024: Arena_Base_polySurface18_walls_Arena_Base_001
+    2300026: Arena_Base_pTorus1_fence
+    2300028: Arena_Base_pTorus1_fence_001
+    2300030: Arena_Base_ramp
+    2300032: Cube
+    2300034: Cube_001
+    2300036: Cube_002
+    2300038: Cube_003
+    2300040: Cube_004
+    2300042: default_1_1
+    2300044: default_1_1_001
+    2300046: Entrance_Floor_Arena_Base
+    3300000: Arena
+    3300002: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_000
+    3300004: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_001
+    3300006: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_floor_s
+    3300008: Arena_Base_arena_entrance_entrance_door
+    3300010: Arena_Base_chairs_all
+    3300012: Arena_Base_Entrance_Sides
+    3300014: Arena_Base_Entrance_Sides_001
+    3300016: Arena_Base_Entrance_Sides_002
+    3300018: Arena_Base_Entrance_Sides_003
+    3300020: Arena_Base_fence_transform39_33
+    3300022: Arena_Base_polySurface18_walls_Arena_Base
+    3300024: Arena_Base_polySurface18_walls_Arena_Base_001
+    3300026: Arena_Base_pTorus1_fence
+    3300028: Arena_Base_pTorus1_fence_001
+    3300030: Arena_Base_ramp
+    3300032: Cube
+    3300034: Cube_001
+    3300036: Cube_002
+    3300038: Cube_003
+    3300040: Cube_004
+    3300042: default_1_1
+    3300044: default_1_1_001
+    3300046: Entrance_Floor_Arena_Base
+    4300000: default_1_1_001
+    4300002: default_1_1
+    4300004: Arena
+    4300006: Arena_Base_Entrance_Sides_003
+    4300008: Arena_Base_pTorus1_fence_001
+    4300010: Cube_004
+    4300012: Cube_003
+    4300014: Cube_001
+    4300016: Cube_002
+    4300018: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_001
+    4300020: Arena_Base_polySurface18_walls_Arena_Base_001
+    4300022: Arena_Base_Entrance_Sides_002
+    4300024: Arena_Base_Entrance_Sides_001
+    4300026: Cube
+    4300028: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_flo_000
+    4300030: Arena_Base_fence_transform39_33
+    4300032: Arena_Base_chairs_all
+    4300034: Arena_Base_Entrance_Sides
+    4300036: Arena_Base_Arena_Base_polySurface134_polySurface1_arena_floor_s
+    4300038: Arena_Base_ramp
+    4300040: Arena_Base_polySurface18_walls_Arena_Base
+    4300042: Arena_Base_arena_entrance_entrance_door
+    4300044: Arena_Base_pTorus1_fence
+    4300046: Entrance_Floor_Arena_Base
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
