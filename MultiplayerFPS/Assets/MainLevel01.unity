@@ -216,6 +216,30 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 2.35
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011513553720, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014044614370, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013993310390, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012576258582, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010846167562, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010509013450, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de0a1040bbb28b944be715c4bbc28d52, type: 2}
   m_IsPrefabParent: 0
@@ -11492,8 +11516,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 815377854}
-  m_LocalRotation: {x: -0.006301046, y: -0.9411171, z: 0.33757, w: -0.017477509}
-  m_LocalPosition: {x: -0.20354918, y: 6.6767654, z: 7.3251715}
+  m_LocalRotation: {x: -0.026956461, y: -0.96871424, z: 0.121531025, w: -0.2147006}
+  m_LocalPosition: {x: -6.4057045, y: 4.5290504, z: 13.274428}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -46715,6 +46739,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 441588, guid: 40ddd99388c73324dadd6005f86a03bc, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447150, guid: 40ddd99388c73324dadd6005f86a03bc, type: 2}
+      propertyPath: showGUI
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
