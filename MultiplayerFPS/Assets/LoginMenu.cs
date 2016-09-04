@@ -207,7 +207,7 @@ public class LoginMenu : MonoBehaviour {
 							} else {
 							
 								//ready to send request
-								StartCoroutine (sendRegisterRequest (input_register_username.text, input_register_password.text, "Hello World!")); //calls function to send register request
+								StartCoroutine (sendRegisterRequest (input_register_username.text, input_register_password.text, "[KILLS]0/[DEATHS]0")); //calls function to send register request
 								part = 3; //show 'loading...'
 							}
 						
