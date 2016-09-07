@@ -105,6 +105,7 @@ GameObject:
   - 95: {fileID: 9504178}
   - 114: {fileID: 11499124}
   - 114: {fileID: 11450446}
+  - 114: {fileID: 114000011184352806}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -712,6 +713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  kills: 0
+  deaths: 0
   disableOnDeath:
   - {fileID: 11433214}
   - {fileID: 11433114}
@@ -877,6 +880,7 @@ MonoBehaviour:
   - {fileID: 8100924}
   - {fileID: 9504178}
   - {fileID: 2058040}
+  - {fileID: 114000011184352806}
   remoteLayerName: RemotePlayer
   dontDrawLayerName: DontDraw
   playerGraphics: {fileID: 168006}
@@ -8325,6 +8329,17 @@ MonoBehaviour:
   m_MinZ: 0.01
   m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
   m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+--- !u!114 &114000011184352806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62733885bd190b44b861469fab9ce75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012374628604
 MonoBehaviour:
   m_ObjectHideFlags: 1
