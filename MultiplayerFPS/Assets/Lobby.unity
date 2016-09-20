@@ -446,7 +446,7 @@ RectTransform:
   - {fileID: 1373535091}
   - {fileID: 1951028467}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -526,22 +526,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 210226246}
---- !u!1 &279637307 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 149246, guid: 40ddd99388c73324dadd6005f86a03bc, type: 2}
-  m_PrefabInternal: {fileID: 451745605}
---- !u!114 &279637308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 279637307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9733a8e932e6854cbbef67b78d15b59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomSize: 6
 --- !u!1 &294957310
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +741,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &713059320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,7 +1168,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 279637308}
+      - m_Target: {fileID: 972414199}
         m_MethodName: CreateRoom
         m_Mode: 1
         m_Arguments:
@@ -1298,6 +1282,47 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884634383}
+--- !u!1 &972414198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 972414200}
+  - 114: {fileID: 972414199}
+  m_Layer: 0
+  m_Name: HostGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &972414199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972414198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9733a8e932e6854cbbef67b78d15b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomSize: 6
+--- !u!4 &972414200
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972414198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1008490850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +1692,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1373535090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2506,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 279637308}
+      - m_Target: {fileID: 972414199}
         m_MethodName: SetRoomName
         m_Mode: 0
         m_Arguments:
@@ -2694,7 +2719,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1951028466
 GameObject:
   m_ObjectHideFlags: 0

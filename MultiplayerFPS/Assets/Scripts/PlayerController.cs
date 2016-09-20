@@ -50,7 +50,21 @@ public class PlayerController : MonoBehaviour {
 	void Update ()
 	{
 		if (PauseMenu.IsOn)
+		{
+			if (Cursor.lockState != CursorLockMode.None)
+				Cursor.lockState = CursorLockMode.None;
+
+			motor.Move(Vector3.zero);
+			motor.Rotate(Vector3.zero);
+			motor.RotateCamera(0f);
+
 			return;
+		}
+
+		if (Cursor.lockState != CursorLockMode.Locked)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
 
 		//Setting target position for spring
 		//This makes the physics act right when it comes to
