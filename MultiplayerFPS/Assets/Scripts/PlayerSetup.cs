@@ -117,8 +117,6 @@ public class PlayerSetup : NetworkBehaviour {
         GameManager.UnRegisterPlayer(transform.name);
 	}
 
-	public void GetPlayer(){
-		gameObject.GetComponent();
-	}
+	
 
 }
