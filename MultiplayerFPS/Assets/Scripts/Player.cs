@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.Networking;
 using System.Collections;
+using Mirror;
 
 [RequireComponent(typeof(PlayerSetup))]
 public class Player : NetworkBehaviour {
@@ -13,11 +13,11 @@ public class Player : NetworkBehaviour {
 		protected set { _isDead = value; }
 	}
 
-    [SerializeField]
-    private int maxHealth = 100;
+	[SerializeField]
+	private int maxHealth = 100;
 
-    [SyncVar]
-    private int currentHealth;
+	[SyncVar]
+	private int currentHealth;
 
 	public float GetHealthPct ()
 	{
@@ -46,7 +46,7 @@ public class Player : NetworkBehaviour {
 	private bool firstSetup = true;
 
 	public void SetupPlayer ()
-    {
+	{
 		if (isLocalPlayer)
 		{
 			//Switch cameras
@@ -55,13 +55,13 @@ public class Player : NetworkBehaviour {
 		}
 
 		CmdBroadCastNewPlayerSetup();
-    }
+	}
 
 	[Command]
 	private void CmdBroadCastNewPlayerSetup ()
 	{
 		RpcSetupPlayerOnAllClients();
-    }
+	}
 
 	[ClientRpc]
 	private void RpcSetupPlayerOnAllClients ()
@@ -92,20 +92,20 @@ public class Player : NetworkBehaviour {
 	//}
 
 	[ClientRpc]
-    public void RpcTakeDamage (int _amount, string _sourceID)
-    {
+	public void RpcTakeDamage (int _amount, string _sourceID)
+	{
 		if (isDead)
 			return;
 
-        currentHealth -= _amount;
+		currentHealth -= _amount;
 
-        Debug.Log(transform.name + " now has " + currentHealth + " health.");
+		Debug.Log(transform.name + " now has " + currentHealth + " health.");
 
 		if (currentHealth <= 0)
 		{
 			Die(_sourceID);
 		}
-    }
+	}
 
 	private void Die(string _sourceID)
 	{
@@ -168,11 +168,11 @@ public class Player : NetworkBehaviour {
 		Debug.Log(transform.name + " respawned.");
 	}
 
-    public void SetDefaults ()
-    {
+	public void SetDefaults ()
+	{
 		isDead = false;
 
-        currentHealth = maxHealth;
+		currentHealth = maxHealth;
 
 		//Enable the components
 		for (int i = 0; i < disableOnDeath.Length; i++)

@@ -3,8 +3,8 @@
 // This includes adding/removing him correctly on the network.
 //-------------------------------------
 
+using Mirror;
 using UnityEngine;
-using UnityEngine.Networking;
 
 [RequireComponent(typeof(Player))]
 [RequireComponent(typeof(PlayerController))]
