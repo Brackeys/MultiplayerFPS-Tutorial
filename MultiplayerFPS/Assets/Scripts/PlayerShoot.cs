@@ -1,5 +1,5 @@
+using Mirror;
 using UnityEngine;
-using UnityEngine.Networking;
 
 [RequireComponent (typeof (WeaponManager))]
 public class PlayerShoot : NetworkBehaviour {

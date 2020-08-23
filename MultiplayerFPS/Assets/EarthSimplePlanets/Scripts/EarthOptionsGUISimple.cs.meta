@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2525dbbf144c93d43a723b6c42ab4d21
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - scrollImage: {fileID: 2800000, guid: 184a0f735350b544494104b70002b8ee, type: 3}
+  - guiSkin: {fileID: 11400000, guid: e5b508c7f41e50649a0b4ef80dcc84f0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
