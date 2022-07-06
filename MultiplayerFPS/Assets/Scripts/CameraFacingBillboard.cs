@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraFacingBillboard : MonoBehaviour {
 	
+	//Brackeys
 	// Update is called once per frame
 	void Update () {
 		Camera cam = Camera.main;
